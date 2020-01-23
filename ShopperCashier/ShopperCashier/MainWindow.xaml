@@ -1,0 +1,31 @@
+﻿<Window x:Class="ShopperCashier.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ShopperCashier"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="400" WindowStyle="None" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Canvas HorizontalAlignment="Center" Height="600" VerticalAlignment="Center" Width="400" Background="#FFBDCCFF">
+            <Label Name="lblEmail" Content="Email" Canvas.Left="100" Canvas.Top="320" TextOptions.TextHintingMode="Animated" Foreground="White"/>
+            <TextBox Name="TB_Email" Height="30" Canvas.Left="100" TextWrapping="Wrap" Canvas.Top="350" Width="200" Background="White" TextOptions.TextHintingMode="Animated" VerticalAlignment="Center" VerticalContentAlignment="Center" Padding="10,0,0,0"/>
+            <Label Content="Password" Canvas.Left="100" Canvas.Top="380" Foreground="White"/>
+            <Button Name="BTN_Login" Click="BTN_Login_Click" Content="Login" Canvas.Left="100" Canvas.Top="470" Width="75" Background="Orange" Foreground="White" Height="25" BorderThickness="1" Focusable="False" BorderBrush="{x:Null}" HorizontalAlignment="Center"/>
+            <Button Content="Forgot Password?" Canvas.Left="199" Canvas.Top="470" Width="101" Background="Transparent" Foreground="White" BorderBrush="{x:Null}"/>
+            <CheckBox Content="Remember me" Canvas.Left="100" Canvas.Top="450" Foreground="White"/>
+            <Image Height="200" Canvas.Left="100" Source="me.png" Stretch="Fill" Canvas.Top="120" Width="200"/>
+            <PasswordBox Name="TB_Password" Canvas.Left="100" Canvas.Top="406" Width="200" Height="30" VerticalAlignment="Top" HorizontalAlignment="Center" VerticalContentAlignment="Center" Padding="10,0,0,0"/>
+
+        </Canvas>
+
+    </Grid>
+</Window>

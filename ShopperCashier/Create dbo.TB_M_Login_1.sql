@@ -1,0 +1,1 @@
+﻿SELECT usename, password FROM dbo.TB_M_Login WHERE usename = 'aldiyutaka@gmail.com' AND password = 'iqbalbau'
